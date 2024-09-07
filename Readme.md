@@ -18,7 +18,7 @@ Download [Python 3.11+](https://www.python.org/downloads/) and install dependenc
 pip install -r requirements.txt
 ```
 
-Extract all files and folders from "Source Code.zip" into a single folder the run this command.
+Extract all files and folders from "Source Code.zip" into a single folder then run this command.
 ```bash
 python main.py
 ```
