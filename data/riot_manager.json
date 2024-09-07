@@ -1,0 +1,20 @@
+{
+    "Profiles": [
+        {
+            "username": "lol",
+            "password": "password123",
+            "riot_id": "Agurin#EUW",
+            "region": "EUW"
+        }
+    ],
+    "Options": {
+        "mode": "profile_image_url",
+        "notifications": true,
+        "language": "en",
+        "riot_client_path": [
+            "C:\\Riot Games\\Riot Client\\RiotClientServices.exe",
+            "--launch-product=league_of_legends",
+            "--launch-patchline=live"
+        ]
+    }
+}
