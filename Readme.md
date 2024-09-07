@@ -36,4 +36,4 @@ You can right click on an account for delete, edit, or refresh it.
 
 ## License
 
-BSD-2-Clause license see `LICENCE` for more information.
+BSD-2-Clause license see `LICENSE` for more information.
