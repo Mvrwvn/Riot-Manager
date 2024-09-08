@@ -25,7 +25,7 @@ python main.py
 
 ## How to use
 
-To see the current elo of an account simply hover hover over it. To connect to an account left click on it.
+To see the current elo of an account simply hover over it. To connect to an account left click on it.
 You can right click on an account for delete, edit, or refresh it.
 
 ## Thanks 
