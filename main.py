@@ -59,7 +59,7 @@ class MainWindow:
         with open("data/riot_manager.json", "r") as f:
             data = json.load(f)
         data["Profiles"].pop(index)
-        with open("riot_manager.json", "w") as f:
+        with open("data/riot_manager.json", "w") as f:
             json.dump(data, f, indent=4)
         self.refresh_profiles()
 
@@ -136,7 +136,7 @@ class SettingsWindow:
             data["Options"]["mode"] = "profile_image_url"
         else:
             data["Options"]["mode"] = "tier_image_url"
-        with open("riot_manager.json", "w") as f:
+        with open("data/riot_manager.json", "w") as f:
             json.dump(data, f, indent=4)
 
 
@@ -159,7 +159,7 @@ class SettingsWindow:
         with open("data/riot_manager.json", "r") as f:
             data = json.load(f)
         data["Options"]["riot_client_path"] = file_path
-        with open("riot_manager.json", "w") as f:
+        with open("data/riot_manager.json", "w") as f:
             json.dump(data, f, indent=4)
 
 class AddProfileWindow:
@@ -220,7 +220,7 @@ class AddProfileWindow:
                     "riot_id": self.riot_id_entry.get(),
                     "region": self.region_entry.get()
                 })
-                with open("riot_manager.json", "w") as f:
+                with open("data/riot_manager.json", "w") as f:
                     json.dump(data, f, indent=4)
                 self.on_closing()
             except Exception as e:
@@ -235,7 +235,7 @@ class AddProfileWindow:
                 "region": self.region_entry.get()
             })
             data["Profiles"].pop(data["Profiles"].index(self.data))
-            with open("riot_manager.json", "w") as f:
+            with open("data/riot_manager.json", "w") as f:
                 json.dump(data, f, indent=4)
             self.on_closing()
 
